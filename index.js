@@ -180,8 +180,8 @@ Aşağıdakileri yapmak için ismeGoreFiltrele işlevini kullanın:
 
 function ismeGoreFiltrele(dizi, malzeme){
   const çıktı = [];
-  for (i = dizi.length - 1; i >= 0; i--) {
-    if (dizi[i].includes(malzeme) == true ) {
+  for (let i = dizi.length - 1; i >= 0; i--) {
+    if (dizi[i].includes(malzeme)) {
       çıktı.unshift(dizi[i]);
     } 
   };
